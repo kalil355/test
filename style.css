@@ -1,50 +1,49 @@
 body {
-  font-family: Tahoma, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  direction: rtl;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
 }
 
-nav {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
+header {
+  display: flex;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-header {
-  background-color: #555;
-  color: #fff;
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #ddd;
+  padding: 60px;
   text-align: center;
-  padding: 30px 10px;
 }
 
-section {
-  max-width: 800px;
-  margin: 30px auto;
-  background-color: white;
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
   padding: 20px;
-  border-radius: 10px;
-}
-
-form input, form textarea, form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
