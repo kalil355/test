@@ -1,0 +1,44 @@
+<!-- appointment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - Al_Mashhouri Auto Garage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/appointment.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Garage Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="suggestions.html">Suggestions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="appointment.html" class="active">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Book an Appointment</h1>
+      <form id="appointmentForm">
+        <input type="text" id="clientName" placeholder="Your Name" required />
+        <input type="date" id="date" required />
+        <textarea id="details" placeholder="Describe your issue" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="appointmentList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Al_Mashhouri Auto Garage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
