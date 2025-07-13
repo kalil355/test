@@ -58,3 +58,29 @@ footer {
   border: 2px solid #333;
   border-radius: 5px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+}
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+form button {
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.suggestion-box {
+  border: 1px solid #999;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 4px;
+}
