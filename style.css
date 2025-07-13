@@ -1,0 +1,44 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  direction: rtl;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.services, .about, .contact {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "🔧 ";
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+احفظ الملف باسم: style.css
