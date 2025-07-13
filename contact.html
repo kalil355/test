@@ -1,41 +1,38 @@
+<!-- contact.html -->
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>تواصل معنا | ورشة النخبة</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    function showSuccessMessage(event) {
-      event.preventDefault();
-      alert("✅ تم إرسال رسالتك بنجاح (وهميًا)");
-      document.getElementById("contact-form").reset();
-    }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Al_Mashhouri Auto Garage</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="about.html">من نحن</a></li>
-      <li><a href="services.html">خدماتنا</a></li>
-      <li><a href="contact.html">تواصل معنا</a></li>
-    </ul>
-  </nav>
+  <header>
+    <img src="images/logo.png" alt="Garage Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="suggestions.html">Suggestions</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section>
-    <h2>راسلنا</h2>
-    <form id="contact-form" onsubmit="showSuccessMessage(event)">
-      <label>الاسم:</label><br>
-      <input type="text" name="name" required><br><br>
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>Email: <a href="mailto:almashhouri.garage@example.com">almashhouri.garage@example.com</a></p>
+      <p>Phone: +44 7700 900123</p>
+    </section>
+  </main>
 
-      <label>البريد الإلكتروني:</label><br>
-      <input type="email" name="email" required><br><br>
-
-      <label>الرسالة:</label><br>
-      <textarea name="message" rows="5" required></textarea><br><br>
-
-      <button type="submit">إرسال</button>
-    </form>
-  </section>
+  <footer>
+    <p>&copy; 2025 Al_Mashhouri Auto Garage. All rights reserved.</p>
+  </footer>
 </body>
 </html>
