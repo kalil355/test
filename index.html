@@ -2,32 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Al_Mashhouri Auto Garage</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Garage Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="work.html">Our Work</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="suggestions.html">Suggestions</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="appointment.html">Book Appointment</a></li>
-      </ul>
-    </nav>
+  <!-- Header / Home Section -->
+  <header id="home">
+    <div class="logo">
+      <img src="images/logo.png" alt="Al_Mashhouri Auto Garage Logo" />
+      <h1>Al_Mashhouri Auto Garage</h1>
+    </div>
+    <p class="location">Near AJS Fabrications, 27 Lamledge Ln, Shifnal TF11 8SD</p>
+    <div class="socials">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="https://wa.me/447375924455" target="_blank">WhatsApp</a>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Al_Mashhouri Auto Garage</h1>
-      <p>Expert Automotive Services with a Touch of British Excellence</p>
-    </section>
-  </main>
+  <!-- Our Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>General car repairs & diagnostics</li>
+      <li>Engine replacement and maintenance</li>
+      <li>Oil change and filters</li>
+      <li>Brake and suspension services</li>
+      <li>Special deals and competitive pricing</li>
+    </ul>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="images/work1.jpg" alt="Work 1">
+      <img src="images/work2.jpg" alt="Work 2">
+      <img src="images/work3.jpg" alt="Work 3">
+    </div>
+  </section>
+
+  <!-- Book Appointment -->
+  <section id="booking">
+    <h2>Book Appointment</h2>
+    <form action="https://formsubmit.co/khalilalasmail@gmail.com" method="POST">
+      <input type="hidden" name="_cc" value="fadikhalaileh@hotmail.com">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="car" placeholder="Car Make & Model" required />
+      <input type="date" name="date" required />
+      <textarea name="message" placeholder="Additional message" rows="4"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p class="contact">Or call us: <a href="tel:+447375924455">+44 7375 924455</a></p>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top">↑</button>
 
   <footer>
     <p>&copy; 2025 Al_Mashhouri Auto Garage. All rights reserved.</p>
